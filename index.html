@@ -3,169 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lynn Angela Lawagon | Portfolio</title>
+    <title>Lynn Angela Lawagon — Computer Science Student</title>
+    <meta name="description" content="Portfolio of Lynn Angela Lawagon, Computer Science student focused on web development, Java applications, and AI-assisted systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/05ff1916e5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
     <header class="navbar">
-        <div class="nav-brand">Lynn Angela Lawagon</div>
-        <nav>
+        <a href="#home" class="nav-brand">Lynn Angela Lawagon</a>
+        <nav aria-label="Primary">
             <a href="#home">Home</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#seminars">Seminars</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="https://github.com/LynnLawagon" target="_blank">GitHub</a>
+            <a href="#credentials">Credentials</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/LynnLawagon" target="_blank" rel="noopener">GitHub</a>
         </nav>
-        <button id="themeSwitch" class="theme-btn">Switch to Dark Mode</button>
+        <button id="themeSwitch" class="theme-btn" aria-label="Switch to dark mode" aria-pressed="false">
+            <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.4M12 19.1v2.4M21.5 12h-2.4M4.9 12H2.5M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7M18.4 18.4l-1.7-1.7M7.3 7.3 5.6 5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <a href="https://github.com/LynnLawagon" target="_blank" title="Visit my GitHub">
-                <img src="img/grad pic.jpg" class="grad" alt="Lynn Angela Lawagon">
-            </a>
+            <div class="hero-photo">
+                <a href="https://github.com/LynnLawagon" target="_blank" rel="noopener" title="Visit my GitHub">
+                    <img src="img/grad pic.jpg" class="grad" alt="Lynn Angela Lawagon">
+                </a>
+                <span class="photo-tag">@LynnLawagon</span>
+            </div>
 
             <div class="hero-text">
+                <p class="eyebrow">Computer Science Student</p>
                 <h1 class="name">Lynn Angela Lawagon</h1>
-                <h2>IT103L-A222</h2>
+                <p class="course-tag">IT103L &middot; A222</p>
                 <p class="intro">
-                    I am a Computer Science student passionate about creating useful, user-friendly, and
-                    innovative systems. My projects focus on web development, Java applications,
-                    management systems, and AI-assisted solutions.
+                    I build useful, user-friendly systems — from web applications to Java programs
+                    and AI-assisted tools. My work spans web development, desktop applications,
+                    and management systems, with a growing focus on practical AI integration.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="https://github.com/LynnLawagon" target="_blank" class="btn primary-btn">
+                    <a href="https://github.com/LynnLawagon" target="_blank" rel="noopener" class="btn primary-btn">
                         <i class="fa-brands fa-github"></i> View GitHub
                     </a>
                     <a href="#projects" class="btn secondary-btn">
-                        <i class="fa-solid fa-folder-open"></i> View Projects
+                        View Projects
                     </a>
                 </div>
 
                 <div class="socials">
-                    <a href="https://youtube.com/@ssaikiix3082?si=A6BVdSShf5VYBYk3" target="_blank" aria-label="YouTube">
+                    <a href="https://youtube.com/@ssaikiix3082?si=A6BVdSShf5VYBYk3" target="_blank" rel="noopener" aria-label="YouTube">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a href="https://www.facebook.com/lynnangela.lawagon" target="_blank" aria-label="Facebook">
+                    <a href="https://www.facebook.com/lynnangela.lawagon" target="_blank" rel="noopener" aria-label="Facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://github.com/LynnLawagon" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/LynnLawagon" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="certificates" class="section">
+        <section id="about" class="section">
             <div class="section-header">
-                <h1>Certificates</h1>
-                <hr>
+                <p class="eyebrow">About</p>
+                <h2>Core skills</h2>
             </div>
-
-            <div class="card media-card">
-                <img src="img/ITS exam certificate_page-0001.jpg" class="cert1" alt="Java ITS Certificate">
-                <h4>Java Information Technology Specialist Certificate</h4>
-            </div>
-        </section>
-
-        <section id="seminars" class="section">
-            <div class="section-header">
-                <h1>Seminars Attended</h1>
-                <hr>
-            </div>
-
-            <div class="card media-card">
-                <img src="img/14_C++ Certificate_page-0001.jpg" class="cert2" alt="C++ Workshop Certificate">
-                <h4>C++ Lab: Crafting Code in the Digital Age Workshop</h4>
-            </div>
+            <p class="section-intro">
+                Tools and areas I've worked with across coursework and personal projects, listed below.
+            </p>
+            <ul class="skills-grid">
+                <li class="skill-chip">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-solid fa-code"></i>
+                    <span>C++</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>OCR &amp; Computer Vision</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>AI-Assisted Systems</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-solid fa-database"></i>
+                    <span>CRUD &amp; Database Design</span>
+                </li>
+                <li class="skill-chip">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Git &amp; GitHub</span>
+                </li>
+            </ul>
         </section>
 
         <section id="projects" class="section">
             <div class="section-header">
-                <h1>Projects</h1>
-                <hr>
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects</h2>
             </div>
 
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-content no-video">
-                        <h3>OCR Results</h3>
+            <div class="project-group">
+                <h3 class="group-heading">Professional Work</h3>
+                <p class="group-subheading">Built for Legaspi Inn, a real business.</p>
+
+                <div class="project-grid">
+                    <article class="project-card featured-card">
+                        <span class="project-index">01</span>
+                        <h3>HobbieTrades</h3>
+                        <p class="project-path">hobbietrades/</p>
                         <p>
-                            A smart web-based inn guest processing system that uses OCR and AI-supported ID checking
-                            for faster and more efficient guest information handling.
+                            The final project for this term — a hobbyist trading platform that lets users list,
+                            browse, and trade collectible items, built as a full-stack app with a separate
+                            frontend and backend service.
                         </p>
-                        <div class="project-links">
-                            <a href="https://github.com/LynnLawagon/Legaspi_inn_pdf" target="_blank" class="btn small-btn">
-                                <i class="fa-brands fa-github"></i> Repository
+                        <p class="project-credit">Built with Chlyde Espinosa</p>
+
+                        <div class="project-gallery">
+                            <a href="img/HobbieTrades Img/login.png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/login.png" alt="HobbieTrades login screen" loading="lazy">
+                            </a>
+                            <a href="img/HobbieTrades Img/browse.png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/browse.png" alt="HobbieTrades browse page" loading="lazy">
+                            </a>
+                            <a href="img/HobbieTrades Img/for you page.png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/for you page.png" alt="HobbieTrades For You page" loading="lazy">
+                            </a>
+                            <a href="img/HobbieTrades Img/item listing.png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/item listing.png" alt="HobbieTrades item listing" loading="lazy">
+                            </a>
+                            <a href="img/HobbieTrades Img/item listing(1).png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/item listing(1).png" alt="HobbieTrades item listing detail" loading="lazy">
+                            </a>
+                            <a href="img/HobbieTrades Img/message tab.png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/message tab.png" alt="HobbieTrades message tab" loading="lazy">
+                            </a>
+                            <a href="img/HobbieTrades Img/profile.png" target="_blank" rel="noopener">
+                                <img src="img/HobbieTrades Img/profile.png" alt="HobbieTrades profile page" loading="lazy">
                             </a>
                         </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-content no-video">
+                        <div class="project-tags">
+                            <span>Full-Stack</span><span>Java</span><span>Final Project</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/tadaaki562/HobbieTrades" target="_blank" rel="noopener" class="repo-link">
+                                Frontend repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/tadaaki562/HobbieTrades-backend-intellij" target="_blank" rel="noopener" class="repo-link">
+                                Backend repository <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-index">02</span>
+                        <h3>Legaspi Inn Management System</h3>
+                        <p class="project-path">legaspi_inn/</p>
+                        <p>
+                            The final information management system built for Legaspi Inn, handling day-to-day
+                            business records and operations for the property.
+                        </p>
+                        <div class="project-tags">
+                            <span>Web</span><span>Database</span><span>Business System</span>
+                        </div>
+                        <a href="https://github.com/LynnLawagon/Legaspi_Inn" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-index">03</span>
+                        <h3>Guest Information System with OCR</h3>
+                        <p class="project-path">guest-information-with-database-and-pdf/</p>
+                        <p>
+                            A guest information management system that automates data capture from IDs using OCR,
+                            stores details in a database, and generates PDF reports with photos, personal details,
+                            and contact information. Supports file uploads and real-time camera scanning.
+                        </p>
+                        <div class="project-tags">
+                            <span>OCR</span><span>Database</span><span>PDF Reports</span>
+                        </div>
+                        <a href="https://github.com/LynnLawagon/Guest-information-with-database-and-PDF" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="project-group">
+                <h3 class="group-heading">Student Work</h3>
+                <p class="group-subheading">Coursework and practice projects.</p>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <span class="project-index">01</span>
                         <h3>Country Guide</h3>
+                        <p class="project-path">m1-sa-countryguide/</p>
                         <p>
                             A web project that presents useful country information in a clean and organized way,
                             helping users explore locations and learn key details efficiently.
                         </p>
-                        <div class="project-links">
-                            <a href="https://github.com/LynnLawagon/m1-sa-countryguide" target="_blank" class="btn small-btn">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
+                        <div class="project-tags">
+                            <span>Web</span><span>API</span>
                         </div>
-                    </div>
-                </div>
+                        <a href="https://github.com/LynnLawagon/m1-sa-countryguide" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-content no-video">
-                        <h3>Pet Management System CRUD</h3>
+                    <article class="project-card">
+                        <span class="project-index">02</span>
+                        <h3>Pet Management System</h3>
+                        <p class="project-path">pet-management-system-crud/</p>
                         <p>
                             A CRUD-based management system for handling pet records with organized input,
                             storage, and update functions for easier data management.
                         </p>
-                        <div class="project-links">
-                            <a href="https://github.com/LynnLawagon/Pet-management-system-CRUD" target="_blank" class="btn small-btn">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
+                        <div class="project-tags">
+                            <span>CRUD</span><span>Database</span>
                         </div>
-                    </div>
-                </div>
+                        <a href="https://github.com/LynnLawagon/Pet-management-system-CRUD" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-content no-video">
+                    <article class="project-card">
+                        <span class="project-index">03</span>
                         <h3>Sign Language</h3>
+                        <p class="project-path">sign-language/</p>
                         <p>
-                            A project focused on sign language recognition or support, designed to promote
+                            A project focused on sign language recognition and support, designed to promote
                             accessibility and better communication through technology.
                         </p>
-                        <div class="project-links">
-                            <a href="https://github.com/LynnLawagon/sign-language" target="_blank" class="btn small-btn">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
+                        <div class="project-tags">
+                            <span>Computer Vision</span><span>Accessibility</span>
                         </div>
-                    </div>
-                </div>
+                        <a href="https://github.com/LynnLawagon/sign-language" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-content no-video">
+                    <article class="project-card">
+                        <span class="project-index">04</span>
                         <h3>Sales and Management System</h3>
+                        <p class="project-path">java-sales-and-management-system/</p>
                         <p>
                             A Java-based system for managing sales, inventory, and records with functions
                             that help improve organization and monitoring in a business setup.
                         </p>
-                        <div class="project-links">
-                            <a href="https://github.com/LynnLawagon/Java-sales-and-management-system" target="_blank" class="btn small-btn">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
+                        <div class="project-tags">
+                            <span>Java</span><span>Inventory</span>
                         </div>
-                    </div>
+                        <a href="https://github.com/LynnLawagon/Java-sales-and-management-system" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-index">05</span>
+                        <h3>Pokémon API Demo</h3>
+                        <p class="project-path">restapi-pokedemo-lawagon/</p>
+                        <p>
+                            A practice project that consumes the Pokémon REST API, fetching and displaying
+                            Pokémon data to demonstrate working with external APIs on the front end.
+                        </p>
+                        <div class="project-tags">
+                            <span>REST API</span><span>Demo</span>
+                        </div>
+                        <a href="https://github.com/LynnLawagon/restapi-pokedemo-lawagon" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-index">06</span>
+                        <h3>OCR Results</h3>
+                        <p class="project-path">legaspi_inn_pdf/</p>
+                        <p>
+                            A smart web-based inn guest processing system that uses OCR and AI-supported ID checking
+                            for faster and more efficient guest information handling.
+                        </p>
+                        <div class="project-tags">
+                            <span>Web</span><span>OCR</span><span>AI</span>
+                        </div>
+                        <a href="https://github.com/LynnLawagon/Legaspi_inn_pdf" target="_blank" rel="noopener" class="repo-link">
+                            View repository <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
+
+        <section id="credentials" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Recognition</p>
+                <h2>Credentials</h2>
+            </div>
+
+            <div class="credentials-grid">
+                <div class="credential-card">
+                    <p class="credential-label">Certification</p>
+                    <img src="img/IT/its-exam-certificate-preview.png" alt="Java Information Technology Specialist certificate">
+                    <h4>Java Information Technology Specialist</h4>
+                    <p class="credential-meta">Certiport / Pearson VUE &middot; Nov 19, 2025</p>
+                    <a href="img/IT/ITS exam certificate.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Seminar</p>
+                    <img src="img/IT/14_C++ Certificate_page-0001.jpg" alt="C++ Workshop Certificate">
+                    <h4>C++ Lab: Crafting Code in the Digital Age Workshop</h4>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Seminar / Event</p>
+                    <img src="img/IT/CCIS InnoVision.jpeg" alt="CCIS InnoVision Certificate">
+                    <h4>CCIS InnoVision</h4>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Certification</p>
+                    <img src="img/IT/Lawagon.jpg" alt="IT Department Certificate">
+                    <h4>IT Department Certificate</h4>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Certification</p>
+                    <img src="img/codechum/codechum-certificate-preview.png" alt="CodeChum C++ Programming 1 certificate">
+                    <h4>C++ Programming 1</h4>
+                    <p class="credential-meta">CodeChum &middot; Score: 1337/1380 &middot; Mar 5, 2025</p>
+                    <a href="img/codechum/codechum certificate.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Certification</p>
+                    <img src="img/codechum/codechum-web-certificate-preview.png" alt="CodeChum Basic Web Development certificate">
+                    <h4>Basic Web Development</h4>
+                    <p class="credential-meta">CodeChum &middot; Score: 1280/1300 &middot; Dec 12, 2025</p>
+                    <a href="img/codechum/codechum web certificate.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Coursera Course</p>
+                    <img src="img/coursera/ethics-preview.png" alt="Ethics, Culture, and Global Perspectives certificate">
+                    <h4>Ethics, Culture, and Global Perspectives</h4>
+                    <p class="credential-meta">University of Illinois Urbana-Champaign &middot; Mar 6, 2026</p>
+                    <a href="img/coursera/Ethics.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Coursera Course</p>
+                    <img src="img/coursera/gender-and-equality-preview.png" alt="Gender Equality certificate">
+                    <h4>Gender Equality</h4>
+                    <p class="credential-meta">University of Western Australia &middot; Feb 26, 2026</p>
+                    <a href="img/coursera/Gender and Equality.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Coursera Course</p>
+                    <img src="img/coursera/introduction-to-user-experience-preview.png" alt="Introduction to User Experience Design certificate">
+                    <h4>Introduction to User Experience Design</h4>
+                    <p class="credential-meta">Georgia Institute of Technology &middot; May 26, 2026</p>
+                    <a href="img/coursera/introduction to user experience.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <p class="credential-label">Coursera Course</p>
+                    <img src="img/coursera/lawagon-coursera-cert-preview.png" alt="Think Again IV: How to Avoid Fallacies certificate">
+                    <h4>Think Again IV: How to Avoid Fallacies</h4>
+                    <p class="credential-meta">Duke University &middot; Oct 23, 2025</p>
+                    <a href="img/coursera/Lawagon Coursera Cert.pdf" target="_blank" rel="noopener" class="repo-link">
+                        View PDF <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Get in Touch</p>
+                <h2>Contact</h2>
+            </div>
+            <p class="section-intro">
+                Have a question, opportunity, or just want to connect? Send a message below and I'll get back to you.
+            </p>
+
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/xwvdrplv" method="POST">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Lynn Angela Lawagon. Built and maintained on <a href="https://github.com/LynnLawagon" target="_blank" rel="noopener">GitHub</a>.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
